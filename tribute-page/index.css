@@ -1,0 +1,24 @@
+#main {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+#image {
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+    display: block;
+}
+
+#img-caption {
+    align-self: center;
+    text-align: center;
+}
+
+#tribute-info {
+    line-height: 2em;
+}
