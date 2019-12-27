@@ -1,12 +1,19 @@
-#main {
+body {
     background-color: rgb(230, 230, 230);
+}
+
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 #image {
     max-width: 100%;
     align-self: center;
@@ -21,4 +28,5 @@
 
 #tribute-info {
     line-height: 2em;
+    padding: 5% 10%;
 }
