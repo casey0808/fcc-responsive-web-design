@@ -1,0 +1,73 @@
+html {
+    background: linear-gradient(0, #CCFFFF,#FFCCCC) ;
+    height: 150%;
+    /* color: whitesmoke; */
+}
+h1, #description {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    text-align: center;
+    color: rgb(91, 142, 190);
+}
+h1 {
+    padding-top: 10px;
+}
+
+#survey-form {
+    padding: 50px 10px;
+    background-color: rgb(91, 142, 190);
+    width: 30%;
+    margin: 50px auto;
+    height: 100%;
+    line-height: 1.5em;
+}
+
+label {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+#name, #email, #number, select {
+    width: 80%;
+    height: 2em;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+input+span {
+    color:whitesmoke;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+textarea {
+    margin-top: 5px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: whitesmoke;
+    height: 6em;
+}
+
+#submit {
+    margin-left: 10%;
+    color: whitesmoke;
+    background-color: rgb(253, 173, 173);
+    border-radius: 5px;
+    margin-top: 0;
+    width: 80%;
+    font-weight: 700;
+    height: 2em;
+}
