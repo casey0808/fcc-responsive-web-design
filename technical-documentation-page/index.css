@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    height: 100%;
+    line-height: 1.5em;
+}
+
+header {
+    font-size: 2em;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    order: 2;
+    margin: 1rem 5% 1rem 25%;
+    position: absolute;
+}
+
+#navbar {
+    order: 1;
+    width: 20%;
+    border-right: solid black 2px;
+    position: fixed;
+}
+
+.nav-link, #navbar header {
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: black solid 1px;
+    justify-self: left;
+    text-decoration: none;
+    color: black;
+}
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    line-height: 2rem;
+    word-wrap: break-word;
+}
+
+@media (max-width: 650px) {
+    .nav-link, #navbar header {
+        font-size: 0.8em;
+        padding-left: 0.5rem;
+    }
+}

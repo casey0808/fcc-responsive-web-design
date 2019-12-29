@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introducing_JSX">
+            <header>Introducing JSX</header>
+            <p>Consider this variable declaration:</p>
+            <p><code>const element = &lth1&gtHello, world! &lt/h1&gt; </code></p>
+            <p>This funny tag syntax is neither a string nor HTML.</p>
+            <p>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.</p>
+            <p>JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.</p>
+        </section>
+        <section class="main-section" id="Rendering_Elements">
+            <header>Rendering Elements</header>
+            <p>Elements are the smallest building blocks of React apps.</p>
+            <p>An element describes what you want to see on the screen:</p>
+            <code>const element = &lth1&gtHello, world! &lt/h1&gt; </code>
+            <p>Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
+        </section>
+        <section class="main-section" id="Components_and_Props">
+            <header>Components and Props</header>
+            <p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.</p>
+            <p>Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.</p>
+            <p>You can also use an ES6 class to define a component:</p>
+            <code>
+                class Welcome extends React.Component {</br>
+                    render() { </br>
+                        return &lth1&gtHello, {this.props.name}&lt/h1&gt; </br>
+                    }</br>
+                } 
+            </code>
+        </section>
+        <section class="main-section" id="State_and_Lifecycle">
+            <header>State and Lifecycle</header>
+            <p>We call ReactDOM.render() to change the rendered output:</p>
+            <code>
+                ReactDOM.render(</br>
+                    &ltClock /&gt, </br>
+                    document.getElementById('root') <br>
+                );
+            </code>
+            <p>Converting a Function to a Class</p>
+            <ul>
+                <li>Create an ES6 class, with the same name, that extends React.Component.</li>
+                <li>Add a single empty method to it called render().</li>
+                <li>Move the body of the function into the render() method.</li>
+                <li>Replace props with this.props in the render() body.</li>
+                <li>Delete the remaining empty function declaration.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Handling_Events">
+            <header>Handling Events</header>
+            <p>Handling events with React elements is very similar to handling events on DOM elements. There are some syntactic differences:</p>
+            <ul>
+                <li>React events are named using camelCase, rather than lowercase.</li>
+                <li>With JSX you pass a function as the event handler, rather than a string.</li>
+            </ul>
+            <code>
+                &ltbutton onClick={activateLasers}&gt
+                    Activate Lasers
+                &ltbutton&gt
+            </code>
+        </section>
+    </main>
+    <nav id="navbar">
+        <header>React</header>
+        <a class="nav-link" href="#Introducing_JSX">Introducing JSX</a>
+        <a class="nav-link" href="#Rendering_Elements">Rendering Elements</a>
+        <a class="nav-link" href="#Components_and_Props">Components and Props</a>
+        <a class="nav-link" href="#State_and_Lifecycle">State and Lifecycle</a>
+        <a class="nav-link" href="#Handling_Events">Handling Events</a>
+    </nav> 
+
+
+</body>
+</html>
