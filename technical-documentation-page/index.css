@@ -17,6 +17,9 @@ header {
     position: absolute;
 }
 
+.main-section {
+    padding-top: 1em;
+}
 #navbar {
     order: 1;
     width: 20%;
@@ -42,7 +45,7 @@ code {
 
 @media (max-width: 650px) {
     .nav-link, #navbar header {
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding-left: 0.5rem;
     }
 }
