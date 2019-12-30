@@ -1,4 +1,4 @@
-# responsive-web-design
+# responsive web design
 
 I created some web page templates for different needs.
 
